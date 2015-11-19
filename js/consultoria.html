@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Consultoría</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/iconmoon.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.floating-social-share.min.css" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <style>
+        ul[role="tablist"] > li > a > img.profile {
+            width: 120px !important;
+            height: 130px !important;
+        }
+
+        ul[role="tablist"] > li > a > img.skype {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        /* PARALLAX LIKE EFFECT STYLES */
+        .parallax-like {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: url(images/consultoria/fondo.jpg) no-repeat center center; /* DEFINE IMAGE PATH CAREFULLY*/
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .parallax-like .overlay {
+            min-height: 400px;
+            padding-bottom: 120px;
+            padding-top: 120px;
+        }
+    </style>
+
+</head>
+
+<body class="homepage">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KS9V28"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KS9V28');</script>
+<!-- End Google Tag Manager -->
+
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+
+                <div class="col-md-3">
+                    <div class="navbar-header navbar-header-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-logo" href="index.html">
+                            <img src="images/unidades_negocio/GS_CONSULTORIA.png" style="  height: 130px;" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-xs-12 navbar-margin">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li id="boton-noticia" class="un" data-toggle="tooltip" data-placement="bottom" title="Noticias">
+                                
+                            </li>
+                            <li id="boton-descarga" class="un" data-toggle="tooltip" data-placement="bottom" title="Descargas">
+                                
+                            </li>
+                            <li id="boton-registro" class="un" data-toggle="tooltip" data-placement="bottom" title="Registro">
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav navbar-un">
+                            <li><a class="go-to" href="index.html">Inicio</a></li>
+                            <li><a class="go-to" href="#equipo" role="tab" data-toggle="tab">Equipo</a></li>
+                            <li><a class="go-to" href="#ofimatica" role="tab" data-toggle="tab">Ofimática</a></li>
+                            <li><a class="go-to" href="#niff" role="tab" data-toggle="tab">NIIF</a></li>
+                            <li><a class="go-to" href="#admin" role="tab" data-toggle="tab">Admin. Proyecto</a></li>
+                            <li><a class="go-to" href="#gestion" role="tab" data-toggle="tab">Gestión de proyectos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol id="adminIndicatorsSlide" class="carousel-indicators"></ol>
+            <div id="adminSlideConsultoria" class="carousel-inner">
+
+
+            </div>
+        </div>
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section>
+    
+    <section id="feature footer-inverse">
+
+        <div class="container" style="width:99%">
+            <div class="row">
+                <div id="social-sticky-bar" class="col-md-1 app stiky-bar-max-top">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7 wow padding-top" style="padding: 0;">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-8 col-md-4 content-unidad-negocio" style="  margin-top: 10%;">
+                            <img src="images/iconos_unidades_negocio/GS_CONSULTORIA.png" alt="Consultoria" class="icono-unidad-negocio" />
+                        </div>
+                        <div class="col-md-8 col-xs-12 col-sm-12">
+                            <h3 class="text-center bold">GESTIÓN DE LA INFORMACIÓN</h3>
+                            <p class="text-justify">
+                                Somos socios de negocios de Ofimática, contamos con consultores especializados en la implementación de este sistema de información, optimizando los procesos internos de su empresa, generando apoyo a sus áreas comerciales, contables y administrativas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 wow" style="  margin-top: 4%;">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" width="100%" height="255px"
+                        id="videoYoutube" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="content" class="no-margin gray" style="width:100%">
+
+        <div class="container no-margin" style="width:100%">
+            <div class="container text-center no-margin" style="width:100%">
+                <div class="row no-margin">
+                    <div class="col-xs-12 col-sm-12 col-md-12 no-margin" role="tabpanel" id="tab-list">
+                        <div class="col-xs-12 col-sm-12 no-margin">
+
+                            <ul class="nav nav-justified" id="nav-tabs" role="tablist">
+                                <li id="logo-equipo" role="presentation" class="logo-list active">
+                                    <a href="#equipo" aria-controls="equipo" role="tab" data-toggle="tab">
+                                        <img class="img-circle" src="images/consultoria/iconos/EquipoConsultoria.png" />
+                                    </a>
+                                    <span class="description-badges">EQUIPO</span>
+                                </li>
+                                <li id="logo-ofimatica" role="presentation" class="">
+                                    <a href="#ofimatica" aria-controls="ofimatica" role="tab" data-toggle="tab">
+                                        <img class="img-circle" src="images/consultoria/iconos/IconoOfimatica.png" />
+                                    </a>
+                                    <span class="description-badges">OFIMÁTICA</span>
+                                </li>
+                                <li id="logo-niff" role="presentation" class="">
+                                    <a href="#niff" aria-controls="niff" role="tab" data-toggle="tab">
+                                        <img class="img-circle" src="images/consultoria/iconos/NormasNiff.png" />
+                                    </a>
+                                    <span class="description-badges">NORMAS NIIF</span>
+                                </li>
+                                <li id="logo-admin" role="presentation" class="">
+                                    <a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">
+                                        <img class="img-circle" src="images/consultoria/iconos/AdministracionDelProyecto.png" />
+                                    </a>
+                                    <span class="description-badges">ADMINISTRACIÓN DEL PROYECTO</span>
+                                </li>
+                                <li id="logo-gestion" role="presentation" class="">
+                                    <a href="#gestion" aria-controls="gestion" role="tab" data-toggle="tab">
+                                        <img class="img-circle" src="images/consultoria/iconos/GestionDeControlDeProyecto.png" />
+                                    </a>
+                                    <span class="description-badges">GESTIÓN Y CONTROL DE PROYECTOS</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="col-xs-12 col-sm-12 no-margin">
+                            <div class="tab-content no-margin" id="tabs-collapse">
+                                <div role="tabpanel" class="tab-pane no-margin blue-ligth fade in active parallax-like" id="equipo">
+                                    <div class="tab-inner no-margin overlay">
+
+                                        <div class="row no-margin">
+                                            <div class="col-md-12 no-margin">
+
+                                                <ul class="nav nav-justified nav-team nav-justified-m4" id="nav-tabs-expertos" role="tablist"></ul>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane blue-dark fade" id="ofimatica">
+                                    <div class="tab-inner">
+
+                                        <div class="row no-margin info-negocio">
+                                            <div class="col-md-5 content-info-negocio">
+                                                <img src="images/iconos_unidades_negocio/OFIMATICA.png" alt="Consultoria" class="logo-info-negocio" />
+                                            </div>
+                                            <div class="col-md-7 text-info-negocio text-white">
+                                                <h2 class="text-center bold-white">OFIMÁTICA</h2>
+                                                <p class="text-justify">
+                                                    Líderes en Software Empresarial con más de 20 años de experiencia
+                                                </p>
+
+                                                <p class="text-justify">
+                                                    El Software de Gestión Empresarial Ofimática ofrece la tecnología y apoyo que su empresa necesita para organizarse y crecer. Tenemos más de 20 años de experiencia trabajando y desarrollando soluciones de negocios.
+                                                </p>
+
+                                                <p class="text-justify">
+                                                    El Software Empresarial Ofimática, es un sistema integrado. Con nuestros programas podrá unificar la información de las áreas de su empresa sin necesidad de re-digitar los datos. Con nuestro sistema la información estará al día, tendrá mayor optimización de su tiempo y control de sus procesos.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane white fade" id="niff">
+                                    <div class="tab-inner">
+                                        <div class="row no-margin info-negocio">
+                                            <div class="col-md-5 content-info-negocio">
+                                                <img class="img-circle" src="images/consultoria/iconos/NormasNiff.png" alt="Consultoria" class="logo-info-negocio" />
+                                                <h3 class="bold">NORMAS NIIF</h3>
+                                            </div>
+                                            <div class="col-md-7 text-info-negocio ">
+                                                <h2 class="text-center bold">NORMAS NIIF</h2>
+                                                <p class="text-justify">
+                                                    En Gestion System, contamos con un grupo de especialistas en normas NIIF, enfocados al ERP Ofimática, el cual unifica la información de sus áreas sin necesidad de re-digitar datos, así su empresa tendrá la información al día con la optimización de tiempos y control de procesos
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane blue-ligth-2 fade" id="admin">
+                                    <div class="tab-inner">
+                                        <div class="row no-margin info-negocio">
+                                            <div class="col-md-5 content-info-negocio">
+                                                <img class="img-circle" src="images/consultoria/iconos/AdministracionDelProyecto.png" alt="Consultoria" class="logo-info-negocio" />
+                                                <h3 class="bold-white">ADMINISTRACIÓN DEL PROYECTO</h3>
+                                            </div>
+                                            <div class="col-md-7 text-info-negocio text-white">
+                                                <h2 class="text-center bold-white">ADMINISTRACIÓN DEL PROYECTO</h2>
+                                                <div class="row no-margin">
+                                                    <div class="col-md-6 no-margin">
+                                                        <p class="text-justify" style="margin-top: 150px;">
+                                                            Metodología de proyectos interna.
+                                                            <br>
+                                                            Ofimática.
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-6 no-margin">
+                                                        <img src="images/consultoria/admin_proyectos.png" alt="Admin. Proyectos" style="height: 350px; margin-top: 15px;">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane white fade" id="gestion">
+                                    <div class="tab-inner">
+                                        <div class="row no-margin info-negocio">
+                                            <div class="col-md-5 content-info-negocio">
+                                                <img class="img-circle" src="images/consultoria/iconos/GestionDeControlDeProyecto.png" alt="Consultoria" class="logo-info-negocio" />
+                                                <h3 class="bold">GESTIÓN Y CONTROL DE PROYECTOS</h3>
+                                            </div>
+                                            <div class="col-md-7 text-info-negocio">
+                                                <div class="row no-margin">
+                                                    <div class="col-md-12 no-margin">
+                                                        <img src="images/consultoria/gestion_1.png" alt="Admin. Proyectos" style="height: 300px; margin-top: 15px; width:100%; ">
+                                                    </div>
+                                                </div>
+                                                <div class="row no-margin">
+                                                    <div class="col-md-12 no-margin">
+                                                        <img src="images/consultoria/gestion_2.png" alt="Admin. Proyectos" style="height: 300px; margin-top: 15px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="no-margin">
+        
+    </section>
+
+    <footer id="footer" class="midnight-blue footer-home footer-inverse">
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/alertify.min.css"/>
+    <script src="js/alertify.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <script src="js/tmpl.min.js"></script>
+    <script type="text/javascript" src="js/jquery.floating-social-share.min.js"></script>
+    <script src="js/share-left.js"></script>
+
+    <script>
+        $(function () {
+            $( "#boton-noticia" ).load( "_layouts/boton-noticia.html" );
+            $( "#boton-descarga" ).load( "_layouts/boton-descarga.html" );
+            $( "#boton-registro" ).load( "_layouts/boton-registro.html" );
+            $( "#contact" ).load( "_layouts/suscripcion.html" );
+            $( "#footer" ).load( "_layouts/footer.html" );
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('.carousel').carousel({
+                pause: true,
+                interval: 5000,
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.go-to').click(function () {
+                $("html, body").animate({ scrollTop: $('#tab-list').offset().top }, 1000);
+                var icon = this.href.split("#")[1];
+                $(".logo-list").removeClass("active");
+                $("#logo-" + icon).addClass("logo-list active");
+
+            });
+
+        });
+    </script>
+
+    <script>
+        var unidad = 4;
+        var active = 1;
+        var classActive = "";
+    </script>
+
+    <script type="text/x-tmpl" id="tmpl-data-experto">
+
+        <li>
+            <a>
+                <img class="profile img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
+            </a>
+            <h2>{%=o.nombre%} </h2>
+            <a href="skype:{%=o.skype%}?chat">
+                <img src="images/skype.png" alt="Colombia" class="skype">
+            </a>
+            <span> <a style="color:#fff" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={%=o.email%}" target="blanck" >{%=o.email%}</a></span>
+            <span>Cel: {%=o.telefono%}</span>
+        </li>
+
+    </script>
+
+    <script>
+
+        //
+        var expertos = {
+            Listar: function () {
+
+                $.ajax({
+                    url: urlAPI + 'listarExpertosxUnidad',
+                    type: 'POST',
+                    data: { 'idUnidad': unidad },
+                    dataType: 'json'
+                }).done(function (response) {
+
+                    var template = "";
+
+                    $.each(response, function (i, item) {
+
+                        template += tmpl("tmpl-data-experto", item);
+
+                    });
+
+                    $("#nav-tabs-expertos").append(template);
+
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+
+
+            }
+        }
+
+        var consultoria = {
+            Video: function () {
+
+                $.ajax({
+                    url: urlAPI + 'videoUnidad',
+                    type: 'POST',
+                    data: { 'idUnidad': unidad },
+                    dataType: 'json'
+                }).done(function (response) {
+
+                    $('#videoYoutube').attr('src', response[0].url_video);
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+            },
+
+            SlideUnidad: function () {
+
+                $.ajax({
+                    url: urlAPI + 'SlidesUnidad',
+                    type: 'POST',
+                    data: { 'idUnidad': unidad },
+                    dataType: 'json'
+                }).done(function (data) {
+
+                    var activeCount = 1;
+                    var template = "";
+                    var clasesActive = "";
+                    var templateIndicator = "";
+                    var clasesActiveIndicator = "";
+
+                    $.each(data, function (i, item) {
+
+                        if (activeCount == 1) {
+                            clasesActive = "item active";
+                            clasesActiveIndicator = "active";
+                            activeCount++;
+                        } else {
+                            clasesActive = "item";
+                            clasesActiveIndicator = "";
+                        };
+
+                        templateIndicator += '<li data-target="#main-slider" data-slide-to="' + i + '" class="' + clasesActiveIndicator + '"></li>';
+
+                        template += "<div onclick='location.href="+'"'+item.url+'"'+"' class='" + clasesActive + "' style='cursor:pointer; background-image: url(" + urlImages + "Slides" + item.url_imagen + ");'></div>"
+
+                    });
+
+                    $("#adminSlideConsultoria").append(template);
+                    $("#adminIndicatorsSlide").append(templateIndicator);
+
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+            }
+        }
+
+    </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            expertos.Listar();
+            consultoria.Video();
+            consultoria.SlideUnidad();
+        });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-65559307-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>
+
+</body>
+</html>

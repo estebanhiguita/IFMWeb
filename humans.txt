@@ -1,0 +1,26 @@
+   /* TEAM */
+    Your title: Your name.
+
+                                
+    Site: www.gestionsystem.com
+
+                                
+    Twitter: @gsystemsas
+
+                                
+    Location: envigado, antioquia, colombia
+
+      
+                                
+    /* SITE */
+
+                                
+    Last update: 2015/08/10 
+
+                                
+    Standards: HTML5, CSS3,..
+
+                                
+    Components: Modernizr, jQuery, etc.
+
+                                

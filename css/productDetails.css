@@ -1,0 +1,174 @@
+.col-product {
+    border-radius: 5px;
+    background: #FFF;
+    float: left;
+    padding: 10px;
+    width: 25%;
+}
+
+.photo {
+    border: 1px solid #c2c2c2;
+}
+
+.col-product .info {
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #c2c2c2;
+    border-top: none;
+}
+
+.col-product .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-product .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.col-product:hover .info {
+    background-color: #F5F5DC;
+}
+.col-product .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-product .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #219FD1;
+}
+
+.col-product .info .rating
+{
+    color: #777;
+}
+
+.col-product .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-product .separator
+{
+    border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-product .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-product .separator p i
+{
+    margin-right: 5px;
+}
+.col-product .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-product .btn-add
+{
+    border-right: 1px solid #E1E1E1;
+}
+
+.col-product .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+
+[data-slide="prev"]
+{
+    margin-right: 10px;
+    margin-bottom: -15px;
+}
+
+[data-slide="next"]{
+    margin-bottom: -15px;
+}
+
+.carousel-products .carousel-inner{
+    height: auto !important;
+}
+
+.btn-round-lg{
+    border-radius: 22.5px;
+}
+.btn-round{
+    border-radius: 17px;
+}
+.btn-round-sm{
+    border-radius: 15px;
+}
+.btn-round-xs{
+    border-radius: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-gray{
+    background-color: #5F5F5F;
+    color: #FFFFFF;
+}
+
+.btn-gray:hover{
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.controls{
+    line-height: 120px;
+}
+
+.list-products{
+    margin-bottom: 20px;
+}
+
+.list-products img.logo_factory{
+    width: auto;
+    height: 130px;
+}
+
+.content-logo_factory{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .col-product {
+        width: 50%;
+    }
+
+    .carousel-products 
+}
+

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Ventas | Servidores</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/iconmoon.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.floating-social-share.min.css" />
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/productSlider.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/jssor.css" rel="stylesheet">
+
+
+    <style>
+        ul[role="tablist"] > li > a > img.profile {
+            width: 120px !important;
+            height: 130px !important;
+        }
+
+        ul[role="tablist"] > li > a > img.skype {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        .col-product {
+            margin-bottom: 20px;
+        }
+
+        .card {
+            padding-top: 0px;
+        }
+
+        .card .card-image {
+            height: auto;
+        }
+
+        .card .card-image img {
+            top: 0px;
+        }
+
+        .suscription2 img {
+            text-align: center;
+            width: 250px !important;
+            height: 200px !important;
+            margin-top: 30px;
+        }
+
+        .suscription2 {
+            height: 270px !important;
+            text-align: center;
+        }
+
+
+        .map-3 > img.geo {
+            text-align: center;
+            width: 180px !important;
+            height: 150px !important;
+            margin-top: 30px;
+        }
+
+        .map-3 h3 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body class="homepage">
+
+    <header id="header">
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+
+                <div class="col-md-3">
+                    <div class="navbar-header navbar-header-2">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-logo-un" href="ComercialVentas.html">
+                            <img src="images/unidades_negocio/GS_VENTAS.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-xs-12 navbar-margin">
+                    <div class="social">
+                        <ul class="social-share">
+                            <li id="boton-noticia" class="un" data-toggle="tooltip" data-placement="bottom" title="Noticias">
+
+                            </li>
+                            <li id="boton-descarga" class="un" data-toggle="tooltip" data-placement="bottom" title="Descargas">
+
+                            </li>
+                            <li id="boton-registro" class="un" data-toggle="tooltip" data-placement="bottom" title="Registro">
+
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav navbar-un">
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="ofertas.html">OFERTAS</a></li>
+                            <li><a href="#contact">CONTÁCTENOS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+            <ol id="adminIndicatorsSlide" class="carousel-indicators"></ol>
+            <div id="adminSlideVentas" class="carousel-inner">
+
+
+            </div>
+        </div>
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section>
+
+    <section class="footer-inverse" style="width:100%">
+
+        <div class="container" style="width:100%">
+
+            <div id="products2" class="row no-margin">
+
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="">BÚSQUEDA DE SERVIDORES</label>
+                        <div>
+                            <div>
+                                <img src="images/servidores/pequena.PNG" alt="adobe">
+                                <p class="text-center">Empresas Pequeñas</p>
+                            </div>
+                        </div>
+                        <input type="text" class="search form-control" placeholder="Buscar">
+                    </div>
+                </div>
+                <div class="col-md-10">
+
+                    <div class="row no-margin list" id="list2">
+
+                    </div>
+
+                    <div class="row no-margin">
+                        <ul class="pagination"></ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="products3" class="row no-margin">
+
+                <div class="col-md-2">
+
+                    <div class="form-group">
+                        <label for="">BÚSQUEDA DE SERVIDORES</label>
+                        <div>
+                            <div>
+                                <img src="images/servidores/mediana.PNG" alt="adobe">
+                                <p class="text-center">Empresas Medianas</p>
+                            </div>
+                        </div>
+                        <input type="text" class="search form-control" placeholder="Buscar">
+                    </div>
+
+                </div>
+                <div class="col-md-10">
+
+                    <div class="row no-margin list" id="list3">
+
+                    </div>
+
+                    <div class="row no-margin">
+                        <ul class="pagination"></ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="products4" class="row no-margin">
+
+                <div class="col-md-2">
+
+                    <div class="form-group">
+                        <label for="">BÚSQUEDA DE SERVIDORES</label>
+                        <div>
+                            <div>
+                                <img src="images/servidores/grande.PNG" alt="adobe">
+                                <p class="text-center">Empresas Grandes</p>
+                            </div>
+                        </div>
+                        <input type="text" class="search form-control" placeholder="Buscar">
+                    </div>
+
+                </div>
+                <div class="col-md-10">
+
+                    <div class="row no-margin list" id="list4">
+
+                    </div>
+
+                    <div class="row no-margin">
+                        <ul class="pagination"></ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="oferta" class="row no-margin midnight-blue orange footer-inverse">
+
+
+        <div class=" col-sm-4 col-xs-12 col-md-4 col-md-offset-1 col-sm-offset-2 suscription2 " style="margin-top:15px">
+            <a href="ofertas.html">
+                <img src="images/ventas/ofertas-01.png" alt="Noticias" width="300px">
+            </a>
+            
+        </div>
+
+        <div class="col-md-1 col-sm-1 col-xs-1 hidden-xs" style="  border-right: 3px solid #ffffff; height: 220px;margin-top: 35px;">
+
+        </div>
+
+        <div class="col-sm-4 col-xs-12 col-md-4 map-3 map-2 col-md-offset-1 col-sm-offset-1">
+            <h2 style="color:#ffffff; margin-top:50px">LISTADO DE PRECIOS <br><span style="color:#ffffff" id="fecha">JUNIO</span></h2>
+            <a id="admin-lista-descarga" href="" download>
+                <img style="margin-top:-10px" src="images/ventas/descarga-01.png" alt="Mapa" class="geo">
+            </a>
+            <a id="admin-lista-pre" target="blank" href="">
+                <img style="margin-top:-10px" src="images/ventas/previzualizar-01.png" alt="Mapa" class="geo">
+            </a>
+        </div>
+
+    </section>
+
+    <section id="contacto" class="row no-margin footer-inverse blue-ligth">
+        <div class="col-md-offset-3 col-md-6">
+
+
+            <div class="row no-margin">
+                <div class="col-md-12 no-margin">
+                    <p class="text-center titulo-equipo-2 text-white">
+                        CONTÁCTANOS
+                    </p>
+                </div>
+            </div>
+
+            <div class="row no-margin">
+                <div class="col-md-12 no-margin">
+
+                    <ul class="nav nav-justified nav-team nav-justified-m2" id="nav-tabs-expertos" role="tablist">
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="row no-margin">
+                <div class="col-md-12 no-margin text-center titulo-equipo-3 text-white">
+                    <p>
+                        Recibimos tarjetas Master Card y Visa.
+                    </p>
+                    <p>
+                        Adquiere crédito con nosotros.
+                    </p>
+                    <p>
+                        <img src="images/ventas/MasterCard.png" alt="MasterCard" class="equipo-credit">
+                        <img src="images/ventas/Visa.png" alt="Visa" class="equipo-credit">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class="no-margin">
+
+    </section>
+
+    <footer id="footer" class="midnight-blue footer-home footer-inverse">
+
+    </footer>
+
+    <!-- modal images -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div id="modal-slider" class="col-md-8">
+
+
+                            <div id="slider1_container" style="position: relative; width: 720px;
+                            height: 480px; overflow: hidden;">
+
+                            <!-- Loading Screen -->
+                            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+                            </div>
+                            <div style="position: absolute; display: block; background: url(images/plugin_slider/loading.gif) no-repeat center center;
+                            top: 0px; left: 0px;width: 100%;height:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Slides Container -->
+                    <div id="content-slides" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 720px; height: 480px; overflow: hidden;">
+
+                        <div>
+                            <img u="image" src="images/plugin_slider/travel/01.jpg" alt="">
+                            <img u="thumb" src="images/plugin_slider/travel/thumb-01.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                    <div u="thumbnavigator" class="jssort07" style="width: 720px; height: 100px; left: 0px; bottom: 0px;">
+                        <!-- Thumbnail Item Skin Begin -->
+                        <div u="slides" style="cursor: default;">
+                            <div u="prototype" class="p">
+                                <div u="thumbnailtemplate" class="i"></div>
+                                <div class="o"></div>
+                            </div>
+                        </div>
+
+                        <!-- Arrow Left -->
+                        <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+                        </span>
+                        <!-- Arrow Right -->
+                        <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+                        </span>
+                        <!--#endregion Arrow Navigator Skin End -->
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4 text-justify" style="padding-left:40px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="admin-nom-producto" style="font-weight: 700;color: #000;  margin: 0;"></h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 id="admin-nom-producto" style="font-weight: 700;color: #000;  margin: 0;margin-top: 10px;">Precio:</h3>
+                        <span>$<span id="admin-precio-producto"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 style="font-weight: 700;color: #000;  margin: 0;margin-top: 10px;">Caracteristicas</h3>
+                    <p id="admin-desc-producto">
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-info" data-dismiss="modal" aria-label="Close">Cerrar</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- end modal images -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/alertify.min.css"/>
+<script src="js/alertify.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/holder.min.js"></script>
+<script type="text/javascript" src="js/jquery.floating-social-share.min.js"></script>
+<script src="js/list.js"></script>
+<script src="js/tmpl.min.js"></script>
+<script src="js/numeral.min.js"></script>
+<script src="js/list.pagination.js"></script>
+
+
+<script type="text/javascript" src="js/jssor.js"></script>
+<script type="text/javascript" src="js/jssor.slider.min.js"></script>
+<script>
+    function Optionsgallery($) {
+        var options = {
+                    $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                    $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                    $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                    $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                    $UISearchMode: 0,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+
+                    $ThumbnailNavigatorOptions: {
+                        $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                        $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                        $Loop: 1,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                        $SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                        $SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                        $DisplayPieces: 6,                              //[Optional] Number of pieces to display, default value is 1
+                        $ParkingPosition: 253,                          //[Optional] The offset position to park thumbnail,
+
+                        $ArrowNavigatorOptions: {
+                            $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                            $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                            $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                            $Steps: 6                                       //[Optional] Steps to go for each navigation request, default value is 1
+                        }
+                    }
+                };
+
+                var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+                //responsive code begin
+                //you can remove responsive code if you don't want the slider scales while window resizes
+                function ScaleSlider() {
+                    var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                    if (parentWidth)
+                        jssor_slider1.$ScaleWidth(Math.min(parentWidth, 720));
+                    else
+                        window.setTimeout(ScaleSlider, 30);
+                }
+                ScaleSlider();
+
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+                //responsive code end
+            };
+
+            var originalHTML = '<div id="slider1_container" style="position: relative; width: 720px; height: 480px; overflow: hidden;"> <div u="loading" style="position: absolute; top: 0px; left: 0px;"> <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;"> </div><div style="position: absolute; display: block; background: url(images/plugin_slider/loading.gif) no-repeat center center; top: 0px; left: 0px;width: 100%;height:100%;"> </div></div><div id="content-slides" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 720px; height: 480px; overflow: hidden;"></div><div u="thumbnavigator" class="jssort07" style="width: 720px; height: 100px; left: 0px; bottom: 0px;"> <div u="slides" style="cursor: default;"> <div u="prototype" class="p"> <div u="thumbnailtemplate" class="i"></div><div class="o"></div></div></div><span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;"> </span> <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;"> </span> </div></div>';
+
+            function refreshSlider(images) {
+                $('#slider1_container').remove();
+                $('#modal-slider').append(originalHTML);
+                createSlideDeck(images);
+                Optionsgallery($);
+            }
+
+            function createSlideDeck(images) {
+                $.each(images, function (i, e) {
+                    createSlide(e);
+                });
+            }
+
+            function createSlide(img) {
+                $div = $('<div><div>');
+                $div.append($('<img u="image" src="' + img.src + '" />'))
+                .append($('<img u="thumb" src="' + img.src + '" />'));
+                $('#content-slides').append($div);
+            }
+
+        </script>
+
+        <script>
+            $(function () {
+
+               $( "#boton-noticia" ).load( "_layouts/boton-noticia.html" );
+               $( "#boton-descarga" ).load( "_layouts/boton-descarga.html" );
+               $( "#boton-registro" ).load( "_layouts/boton-registro.html" );
+               $( "#contact" ).load( "_layouts/suscripcion.html" );
+               $( "#footer" ).load( "_layouts/footer.html" );
+
+
+
+               $('[data-toggle="tooltip"]').tooltip();
+
+               $('.carousel').carousel({
+                pause: true,
+                interval: 5000,
+            });
+
+           });
+            
+            var unidad = 9;
+
+            var ventas = {
+                SlideUnidad: function () {
+
+                    $.ajax({
+                        url: urlAPI + 'SlidesUnidad',
+                        type: 'POST',
+                        data: { 'idUnidad': unidad },
+                        dataType: 'json'
+                    }).done(function (data) {
+
+                        var activeCount = 1;
+                        var template = "";
+                        var clasesActive = "";
+                        var templateIndicator = "";
+                        var clasesActiveIndicator = "";
+
+                        $.each(data, function (i, item) {
+
+                            if (activeCount == 1) {
+                                clasesActive = "item active";
+                                clasesActiveIndicator = "active";
+                                activeCount++;
+                            } else {
+                                clasesActive = "item";
+                                clasesActiveIndicator = "";
+                            };
+
+                            templateIndicator += '<li data-target="#main-slider" data-slide-to="' + i + '" class="' + clasesActiveIndicator + '"></li>';
+
+                            template += "<div onclick='location.href="+'"'+item.url+'"'+"' class='" + clasesActive + "' style='cursor:pointer; background-image: url(" + urlImages + "Slides" + item.url_imagen + ");'></div>"
+
+                        });
+
+                        $("#adminSlideVentas").append(template);
+                        $("#adminIndicatorsSlide").append(templateIndicator);
+
+
+                    }).fail(function (response) {
+
+                        console.log(response);
+
+                    });
+                }
+            }
+        </script>
+
+        <script type="text/x-tmpl" id="tmpl-data-experto">
+
+            <li class="text-center">
+                <a>
+                    <img class="profile img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
+                </a>
+                <h2>{%=o.nombre%}</h2>
+                <a href="skype:{%=o.skype%}?chat">
+                    <img src="images/skype.png" alt="Colombia" class="skype">
+                </a>
+                <span> <a style="color:#fff" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={%=o.email%}" target="blanck" >{%=o.email%}</a></span>
+                <span>Cel: {%=o.telefono%}</span>
+            </li>
+
+        </script>
+
+        <script>
+           var expertos = {
+            Listar: function () {
+
+                $.ajax({
+                    url: urlAPI + 'listarExpertosxUnidad',
+                    type: 'POST',
+                    data: { 'idUnidad': unidad },
+                    dataType: 'json'
+                }).done(function (response) {
+
+                    var template = "";
+
+                    $.each(response, function (i, item) {
+
+                        template += tmpl("tmpl-data-experto", item);
+
+                    });
+
+                    $("#nav-tabs-expertos").append(template);
+
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+
+
+            }
+        }
+        jQuery(document).ready(function ($) {
+            ventas.SlideUnidad();
+            expertos.Listar();
+        });
+    </script>
+
+
+    <script type="text/x-tmpl" id="tmpl-data-servidor">
+
+        <a href="javascript:servidor.Galeria({%=o.id_producto%})" data-codproduct="1">
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <div class="col-product">
+                    <div class="photo">
+                        <img src="{%= urlImages %}Productos/{%=o.url%}" class="img-responsive" alt="a" />
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div class="name-product price col-md-12">
+                                <p>
+                                    {%=o.nombre%}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="separator clear-left">
+                            <p class="price-product btn-add price-text-color">
+                                <i class="fa fa-money"></i>${%= numeral(o.precio).format('0,0') %}
+                            </p>
+
+                            <p class="btn-details">
+                                <a href="javascript:servidor.Galeria({%=o.id_producto%})" class="btn btn-default" data-codproduct="1"><i class="fa fa-file-image-o"></i>Galería</a>
+                            </p>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </script>
+
+
+
+    <script>
+
+        var servidor = {            
+            Galeria: function (id) {
+
+                $.ajax({
+                    url: urlAPI + 'listarGaleriaProductoActivo',
+                    type: 'POST',
+                    data: { 'id': id },
+                    async: false,
+                    dataType: 'json'
+                }).done(function (data) {
+
+                    $("#admin-nom-producto").text(data[0].nombre);
+                    $("#admin-desc-producto").text(data[0].descripcion);
+                    $("#admin-precio-producto").text(numeral(data[0].precio).format('0,0'));
+
+                    var images = new Array();
+                    $.each(data, function (i, item) {
+                        images.push({ 'src': urlImages + 'Productos' + item.url_imagen, 'nombre': 'travel' + i });
+
+                    });
+
+                    $("#slider1_container").remove();
+
+                    var modal = $('#myModal');
+                    modal.find('.modal-title').text('Galería de imágenes para el producto #' + id);
+
+                    refreshSlider(images);
+
+                    $('#myModal').modal('show');
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+
+            },
+            Listar: function (id) {
+                $.ajax({
+                    url: urlAPI + 'listarProductoServidor',
+                    type: 'POST',
+                    data: { 'id': id },
+                    dataType: 'json',
+                    async: false
+                }).done(function (response) {
+
+                    $.each(response, function (i, item) {
+                        $("#list" + id).append(tmpl("tmpl-data-servidor", item));
+                    });
+
+                }).fail(function (response) {
+                    console.log(response);
+                });
+            }
+        }
+
+        var niff_lista_precio = {
+            imagenListadoPrecio: function () {
+
+                $.ajax({
+                    url: urlAPI + 'listarListaPrecioxEstado',
+                    type: 'POST',
+                    dataType: 'json'
+                }).done(function (data) {
+
+                    $('#admin-lista-pre').attr('href', urlImages + "ListaPrecio" + data[0].url_pdf);
+                    $('#admin-lista-descarga').attr('href', urlImages + "ListaPrecio" + data[0].url_pdf);
+
+                }).fail(function (response) {
+
+                    console.log(response);
+
+                });
+            }
+        }
+
+
+    </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            servidor.Listar(2);
+            servidor.Listar(3);
+            servidor.Listar(4);
+            niff_lista_precio.imagenListadoPrecio();
+
+            var options = {
+                valueNames: ['name-product', 'price-product'],
+                page: 4,
+                plugins: [ListPagination({})]
+            };
+            var userList = new List('products2', options);
+
+
+            var options2 = {
+                valueNames: ['name-product', 'price-product'],
+                page: 4,
+                plugins: [ListPagination({})]
+            };
+            var userList = new List('products3', options2);
+
+
+
+            var options3 = {
+                valueNames: ['name-product', 'price-product'],
+                page: 4,
+                plugins: [ListPagination({})]
+            };
+            var userList = new List('products4', options3);
+        });
+    </script>
+
+</body>
+</html>
