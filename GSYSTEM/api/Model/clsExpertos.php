@@ -36,7 +36,7 @@ class clsExpertos
         $sql = "SELECT * FROM tbl_expertos";
         $query = $this->db->prepare($sql);
         if ($query->execute() ){
-            var_dump ($query);
+//            var_dump ($query);
         }
         return $query->fetchAll();
     }

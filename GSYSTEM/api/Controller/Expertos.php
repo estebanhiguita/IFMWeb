@@ -12,8 +12,8 @@ class Expertos extends Controller
         $resultado = $this->mExpertos->getAllExpertos();
         $json = json_encode($resultado);
 
-        //$json = str_replace('"\u0001"', '"1"', $json);
-        //$json = str_replace('"\u0000"', '"0"', $json);
+        $json = str_replace('"\u0001"', '"1"', $json);
+        $json = str_replace('"\u0000"', '"0"', $json);
     //    var_dump($json);
         return $json;
     }  

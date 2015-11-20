@@ -93,7 +93,7 @@ require '_layout/header.php';
                                 <th>Profesion</th>
                                 <th>Cargo</th>
                                 <th>Imagen</th>
-                                <th>Modificar Estado</th>
+                                <th>Modificar      Estado</th>
                                 <th>Seleccionar</th>
                                 <th>Eliminar</th>
                             </tr>

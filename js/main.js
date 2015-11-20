@@ -2,13 +2,13 @@
 var url = document.location.href;
 url = url.toLowerCase();
 
-var dominioGS = "gestionsystem.com.co";
+var dominioGS = "localhost";
 
 if (url.indexOf(".com.co") >= 0)
 {
-	dominioGS = "gestionsystem.com.co";
+	dominioGS = "localhost";
 }else {
-	dominioGS = "gestionsystem.com";
+	dominioGS = "localhost";
 }
 
 //VerificaciÃ³n de url para la consulta de datos
