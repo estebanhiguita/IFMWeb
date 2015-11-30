@@ -208,14 +208,12 @@ expertos.Limpiar();
  
 });
 },
-Edit:function(id, nombre, skype, email, telefono, unidad){
+Edit:function(nombre, skype, email){
  
-  $("#txtIdExpertos").val(id);
+  //$("#txtIdExpertos").val(id);
   $("#txtNombre").val(nombre);
   $("#txtSkype").val(skype);
   $("#txtEmail").val(email);
-  $("#txtTelefono").val(telefono);
-  $("#ddlUnidad").val(unidad);
  
   $("#file").removeAttr("required");
  
