@@ -77,9 +77,9 @@ class clsExpertos
                 $sql = "UPDATE tbl_expertos SET nombre = ?,  profesion = ?, cargo = ? WHERE id_expertos = ?";
                 $query = $this->db->prepare($sql);
                         $query->bindValue(1, $this->__GET("_nombre"));
-                        $query->bindValue(3, $this->__GET("_profesion"));
-                        $query->bindValue(4, $this->__GET("_cargo"));
-                        $query->bindValue(6, $this->__GET("_id_expertos"));
+                        $query->bindValue(2, $this->__GET("_profesion"));
+                        $query->bindValue(3, $this->__GET("_cargo"));
+                        $query->bindValue(4, $this->__GET("_id_expertos"));
 
             }else{
 

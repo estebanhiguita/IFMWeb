@@ -93,6 +93,22 @@ class Expertos extends Controller
 			}
 
     	}
+        try{
+    		if($this->mExpertos->updateExpertos(1, $bImage)){
+    			if($uploadOk==1){
+    				$mensaje = "Se modifico con exito!";
+    			}else{
+    				$mensaje = "Se modifico con exito, pero la imagen no se pudo almacenar en el servidor";
+    			}
+    		}else{
+    			$mensaje = "Ocurrio un error modificando
+
+
+    			";
+    		}
+    	}catch(Exception $e){
+    		$mensaje = "Ocurrio un error ".$e->getMessage();
+    	}
 
     	return json_encode(['msj'=>$mensaje]);
     }
