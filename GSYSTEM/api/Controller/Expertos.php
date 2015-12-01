@@ -60,13 +60,13 @@ class Expertos extends Controller
     	echo json_encode(['msj'=>$mensaje]);
     }
 
-   	public function updateExpertos($id, $nombre, $url, $profesion, $cargo, $file){
+   	public function updateExpertos($id, $nombre, $profesion, $cargo, $file){
 
     	$mensaje = "";
 
     	$this->mExpertos->__SET('_id_expertos', $id);
     	$this->mExpertos->__SET('_nombre', $nombre);
-        $this->mExpertos->__SET('_url', $url);
+        $this->mExpertos->__SET('_url', $file);
     	$this->mExpertos->__SET('_profesion', $profesion);
     	$this->mExpertos->__SET('_cargo', $cargo);
 

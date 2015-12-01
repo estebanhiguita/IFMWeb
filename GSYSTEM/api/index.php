@@ -32,7 +32,7 @@ $app->post('/createExpertos', function () {
 
 $app->post('/updateExpertos', function () {
     $ctr = Controller::loadController("Expertos");
-    echo $ctr->updateExpertos($_POST["txtIdExpertos"], $_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_POST["txtTelefono"],$_FILES["file"],$_POST["ddlUnidad"]);
+    echo $ctr->updateExpertos($_POST["txtIdExpertos"], $_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_FILES["file"]);
 });
 
 $app->post('/updateEstadoExpertos', function () {
