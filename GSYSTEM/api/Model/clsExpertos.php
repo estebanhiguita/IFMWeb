@@ -20,7 +20,7 @@ class clsExpertos
         }
     }
 
-    
+
     public function __SET($atributo, $value){
         $this->$atributo = $value;
     }
@@ -36,7 +36,7 @@ class clsExpertos
         $sql = "SELECT * FROM tbl_expertos";
         $query = $this->db->prepare($sql);
         if ($query->execute() ){
-//            var_dump ($query);
+            //            var_dump ($query);
         }
         return $query->fetchAll();
     }
@@ -44,15 +44,15 @@ class clsExpertos
 
     public function createExpertos()
     {
-        $sql = "INSERT INTO tbl_expertos VALUES (null,?,?,?,?,?)";
+        $sql = "INSERT INTO tbl_expertos (nombre, url, profesion,cargo,estado) VALUES (?,?,?,?,?)";
         $query = $this->db->prepare($sql);
 
         $query->bindValue(1, $this->__GET("_nombre"));
         $query->bindValue(2, $this->__GET("_url"));
         $query->bindValue(3, $this->__GET("_profesion"));
         $query->bindValue(4, $this->__GET("_cargo"));
-        $query->bindValue(5, $this->__GET("_estado"));
-        
+        $query->bindValue(5, 1);
+
 
         return $query->execute();
     }
@@ -76,20 +76,20 @@ class clsExpertos
 
                 $sql = "UPDATE tbl_expertos SET nombre = ?,  profesion = ?, cargo = ? WHERE id_expertos = ?";
                 $query = $this->db->prepare($sql);
-                        $query->bindValue(1, $this->__GET("_nombre"));
-                        $query->bindValue(2, $this->__GET("_profesion"));
-                        $query->bindValue(3, $this->__GET("_cargo"));
-                        $query->bindValue(4, $this->__GET("_id_expertos"));
+                $query->bindValue(1, $this->__GET("_nombre"));
+                $query->bindValue(2, $this->__GET("_profesion"));
+                $query->bindValue(3, $this->__GET("_cargo"));
+                $query->bindValue(4, $this->__GET("_id_expertos"));
 
             }else{
 
-      $sql = "UPDATE tbl_expertos SET nombre = ?,  profesion = ?, cargo = ?, url = ? WHERE id_expertos = ?";
+                $sql = "UPDATE tbl_expertos SET nombre = ?,  profesion = ?, cargo = ?, url = ? WHERE id_expertos = ?";
                 $query = $this->db->prepare($sql);
-                        $query->bindValue(1, $this->__GET("_nombre"));
-                        $query->bindValue(2, $this->__GET("_profesion"));
-                        $query->bindValue(3, $this->__GET("_cargo"));
-                        $query->bindValue(4, $this->__GET("_url"));
-                        $query->bindValue(5, $this->__GET("_id_expertos"));
+                $query->bindValue(1, $this->__GET("_nombre"));
+                $query->bindValue(2, $this->__GET("_profesion"));
+                $query->bindValue(3, $this->__GET("_cargo"));
+                $query->bindValue(4, $this->__GET("_url"));
+                $query->bindValue(5, $this->__GET("_id_expertos"));
             }
 
         }
@@ -105,5 +105,5 @@ class clsExpertos
         $query->bindValue(1, strip_tags($this->__GET("_id_expertos")));
         return $query->execute();
     }
-    
+
 }

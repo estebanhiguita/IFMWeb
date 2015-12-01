@@ -88,7 +88,7 @@ var expertos = {
   },
   Guardar:function(){
     $.ajax({
-      url: url+'/ifmWEb/GSYSTEM/api/createExpertos',
+      url: url+'/IFMWeb/GSYSTEM/api/createExpertos',
       type: 'POST',
       data: new FormData( document.getElementById("frmExpertos") ),
       processData: false,

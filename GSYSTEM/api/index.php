@@ -27,7 +27,7 @@ $app->post('/listarExpertosxUnidad', function () {
 
 $app->post('/createExpertos', function () {
     $ctr = Controller::loadController("Expertos");
-    echo $ctr->createExpertos($_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_POST["txtTelefono"],$_FILES["file"],$_POST["ddlUnidad"]);
+    echo $ctr->createExpertos($_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_FILES["file"]);
 });
 
 $app->post('/updateExpertos', function () {
