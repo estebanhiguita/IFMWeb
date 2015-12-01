@@ -44,16 +44,18 @@ class clsExpertos
 
     public function createExpertos()
     {
+        
         $sql = "INSERT INTO tbl_expertos (nombre, url, profesion,cargo,estado) VALUES (?,?,?,?,?)";
         $query = $this->db->prepare($sql);
-
+        
         $query->bindValue(1, $this->__GET("_nombre"));
         $query->bindValue(2, $this->__GET("_url"));
         $query->bindValue(3, $this->__GET("_profesion"));
         $query->bindValue(4, $this->__GET("_cargo"));
-        $query->bindValue(5, 1);
-
-
+        $query->bindValue(5, $this->__GET("_estado"));
+        
+        
+        var_dump($sql);
         return $query->execute();
     }
 

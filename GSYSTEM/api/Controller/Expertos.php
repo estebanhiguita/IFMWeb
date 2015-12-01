@@ -23,13 +23,18 @@ class Expertos extends Controller
     public function createExpertos($nombre, $profesion, $cargo, $file){
 
         $mensaje = "";
+        $estado = 1;
 
         $this->mExpertos->__SET('_nombre', $nombre);
         $this->mExpertos->__SET('_url', $file);
         $this->mExpertos->__SET('_profesion', $profesion);
         $this->mExpertos->__SET('_cargo', $cargo);
-
-echo "entrò al controler";
+        $this->mExpertos->__SET('_estado', $estado);
+        echo $nombre;
+        echo $file["name"];
+        echo $profesion;
+        echo $cargo;
+        echo $estado;
         $target_dir = "../Admin/dist/upload/Expertos/";
         $target_file = $target_dir . $file["name"];
 
@@ -45,12 +50,14 @@ echo "entrò al controler";
 
         try{
             if($this->mExpertos->createExpertos()){
+                echo "si esta entrando createExpertos";
                 if($uploadOk==1){
                     $mensaje = "Se registró con exito!";
                 }else{
                     $mensaje = "Se registro con exito, pero la imagen no se pudo almacenar en el servidor";
                 }
             }else{
+                echo "NO... esta entrando createExpertos";
                 $mensaje = "Ocurrio un error registrando";
             }
         }catch(Exception $e){
