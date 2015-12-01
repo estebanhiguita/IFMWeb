@@ -125,6 +125,28 @@ class Expertos extends Controller
         $resultado = $this->mExpertos->deleteExpertos();
         return json_encode($resultado);
     }
+    
+    public function updateEstadoExpertos($id, $estado){
+
+    	$mensaje = "";
+
+    	$this->mExpertos->__SET('_id_expertos', $id);
+    	$this->mExpertos->__SET('_estado', $estado);
+
+    	try{
+    		if($this->mExpertos->updateExpertos(0, 0)){
+    			
+    			$mensaje = "Se modifico con exito!";
+    			
+    		}else{
+    			$mensaje = "Ocurrio un error modificando";
+    		}
+    	}catch(Exception $e){
+    		$mensaje = "Ocurrio un error ".$e->getMessage();
+    	}
+
+    	return json_encode(['msj'=>$mensaje]);
+    }
 
 
 
