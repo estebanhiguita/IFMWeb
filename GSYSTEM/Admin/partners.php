@@ -14,12 +14,12 @@ require '_layout/header.php';
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Partners
+      Clientes
       <small>Version 1.0</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      <li class="active">Partners</li>
+      <li class="active">Clientes</li>
     </ol>
   </section>
 
@@ -30,17 +30,17 @@ require '_layout/header.php';
       <div class="col-md-4">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 id="title-form" class="panel-title">Crear Partners</h3>
+            <h3 id="title-form" class="panel-title">Crear Clientes</h3>
           </div>
           <div class="panel-body">
             <form id="frmPartners">
               <div class="form-group">
                 <input type="hidden" class="form-control" id="idPartner" name="idPartner" placeholder="Ejm: Lenovo" required>
-                <label for="nombrePartner">Nombre partner</label>
+                <label for="nombrePartner">Nombre Cliente</label>
                 <input type="text" class="form-control" id="nombrePartner" name="nombrePartner" placeholder="Ejm: Lenovo" minlength="1" maxlength="30" required>
               </div>
               <div class="form-group">
-              <label for="urlPartner">Imagen partner</label>
+              <label for="urlPartner">Imagen cliente</label>
                 <input type="file" class="form-control" id="urlPartner" name="urlPartner" required>
               </div>
               <div class="form-group">
@@ -59,7 +59,7 @@ require '_layout/header.php';
         <div class="panel panel-default">
           <!-- Default panel contents -->
           <div class="panel-heading">
-            <h3 id="title-list" class="panel-title">Listado de Partners</h3>
+            <h3 id="title-list" class="panel-title">Listado de Clientes</h3>
           </div>
 
           <!-- Table -->
