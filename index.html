@@ -275,124 +275,40 @@
 
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio" class="portfolio bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Clientes</h2>
+<section id="content" class="client-banner footer-inverse">
+
+    <div class="container text-center">
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-uppercase text-bold-700 font-size-partners">CLIENTES</h3>
+                </div>
             </div>
         </div>
 
-        <div id="carousel-clients" class="carousel slide container">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-clients" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-clients" data-slide-to="1"></li>
-                <li data-target="#carousel-clients" data-slide-to="2"></li>
-                <li data-target="#carousel-clients" data-slide-to="3"></li>
-            </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <!-- Slide -->
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/fenacol.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Fenacon</h4>
-                            </div>
+        <div class="container">
+
+            <div class='row'>
+                <div class='col-md-12'>
+                    <div class="carousel slide media-carousel" id="media2">
+                        <div id="admin-partners" class="carousel-inner partners">
                         </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/movierecord.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Movierecord</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/televideo.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Televideo</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/peldar.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Peldar</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/tei.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>tei</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/televid.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>televid</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/senal.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Señal Colombia</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/testigo%20directo.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>testigo directo</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6">
-                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                <img src="img/clientes/exito.jpg"  class="img-responsive" alt="" >
-                            </a>
-                            <div class="portfolio-caption text-center">
-                                <h4>Éxito</h4>
-                            </div>
-                        </div>
+                        <!-- Controls -->
+                        <a data-slide="prev" href="#media2" class="left carousel-control carousel-control-partners">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a data-slide="next" href="#media2" class="right carousel-control carousel-control-partners">
+                            <span class="icon-next"></span>
+                        </a>
                     </div>
                 </div>
 
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-clients" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-clients" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
         </div>
     </div>
 </section>
-
 <!-- Team Section -->
 <section id="team" class="bg-light-gray">
     <div class="container">
@@ -529,14 +445,24 @@
 <script src="js/tmpl.min.js"></script>
 
 <script type="text/x-tmpl" id="tmpl-data-experto">
-    <li class="col-sm-4 team-member">
-        <a>
-            <img class="img-responsive img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
-        </a>
-        <h4>{%=o.nombre%} </h4>
-        <p> {%=o.profesion%} </p>
-        <h6> {%=o.cargo%} </h6>
+        <li class="col-sm-4 team-member">
+            <a>
+                <img class="img-responsive img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
+    </a>
+            <h4>{%=o.nombre%} </h4>
+            <p> {%=o.profesion%} </p>
+            <h6> {%=o.cargo%} </h6>
     </li>
+
+</script>
+
+<script type="text/x-tmpl" id="tmpl-data-partners">
+        <div class="col-md-4">
+            <a class="" href="ComercialVentas.html">
+                <img class="desaturate" alt=""
+                src="{%= urlImages %}Partners/{%=o.url_imagen%}">
+    </a>
+    </div>
 
 </script>
 
@@ -574,6 +500,207 @@
     }
 
 </script>
+
+<script>
+
+    var partners = {
+        Listar: function () {
+
+            $.getJSON(urlAPI + 'listarPartnersActivas')
+                .done(function (data) {
+
+                var contentCount = 1;
+                var activeCount = 1;
+                var template = "";
+                var clasesActive = "";
+                var size = data.length;
+
+                $.each(data, function (i, item) {
+
+                    if (activeCount == 1) {
+                        clasesActive = "item active item-partners";
+                        activeCount++;
+                    } else {
+                        clasesActive = "item item-partners";
+                    };
+
+                    if (contentCount == 1) {
+                        template += "<div class='" + clasesActive + "'><div class='row'>"
+                    };
+
+                    template += tmpl("tmpl-data-partners", item);
+
+                    contentCount++;
+                    if (contentCount == 4) {
+
+                        template += "</div></div>";
+                        $("#admin-partners").append(template);
+                        template = "";
+                        contentCount = 1;
+                    };
+
+                    if (i == (size - 1)) {
+                        template += "</div></div>";
+                        $("#admin-partners").append(template);
+                    };
+
+                });
+
+            }).fail(function (response) {
+                console.log(response);
+            });
+        }
+    }
+
+    var unidadNegocio = {
+        Video: function () {
+
+            $.ajax({
+                url: urlAPI + 'videoUnidad',
+                type: 'POST',
+                data: { 'idUnidad': unidad },
+                dataType: 'json'
+            }).done(function (response) {
+
+                $('#videoYoutube').append('<iframe class="embed-responsive-item" width="100%" height="255px" src="' + response[0].url_video + '" frameborder="0" allowfullscreen></iframe>');
+
+                $('#gmapAdmin').append('<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zpmPXL3UT8QY.k3aEjgFnEj5s" width="600" height="450" frameborder="0" style="border:0"></iframe>');
+
+            }).fail(function (response) {
+
+                console.log(response);
+
+            });
+        },
+
+        SlideUnidad: function () {
+
+            $.ajax({
+                url: urlAPI + 'SlidesUnidad',
+                type: 'POST',
+                data: { 'idUnidad': unidad },
+                dataType: 'json'
+            }).done(function (data) {
+
+                var activeCount = 1;
+                var template = "";
+                var clasesActive = "";
+                var templateIndicator = "";
+                var clasesActiveIndicator = "";
+
+                $.each(data, function (i, item) {
+
+                    if (activeCount == 1) {
+                        clasesActive = "item active";
+                        clasesActiveIndicator = "active";
+                        activeCount++;
+                    } else {
+                        clasesActive = "item";
+                        clasesActiveIndicator = "";
+                    };
+
+                    templateIndicator += '<li data-target="#main-slider-2" data-slide-to="' + i + '" class="' + clasesActiveIndicator + '"></li>';
+
+                    template += "<div onclick='location.href="+'"'+item.url+'"'+"' class='" + clasesActive + "' style='cursor:pointer; background-image: url(" + urlImages + "Slides" + item.url_imagen + ");'></div>"
+
+                });
+
+                $("#adminSlideUnidad").append(template);
+                $("#adminIndicatorsSlide").append(templateIndicator);
+
+
+            }).fail(function (response) {
+
+                console.log(response);
+
+            });
+        }
+    }
+
+    var noticias = {
+        listarActivas: function () {
+
+            $.ajax({
+                url: urlAPI + 'listarNoticiaxFecha',
+                type: 'POST',
+                dataType: 'json'
+            }).done(function (data) {
+
+                $.each(data, function (i, item) {
+
+                    classActive = active == 1 ? 'active' : '';
+
+                    $("#adminNoticias").append(tmpl("tmpl-data-noticias", item));
+
+                    active++;
+
+                });
+
+                active = 1;
+
+            }).fail(function (response) {
+
+                console.log(response);
+
+            });
+        }
+    }
+
+    var niff_lista_precio = {
+        imagenNiff: function () {
+
+            $.ajax({
+                url: urlAPI + 'listarNiffxEstado',
+                type: 'POST',
+                dataType: 'json'
+            }).done(function (data) {
+
+                $('#adminNiff').attr('src', urlImages + "Niff/" + data[0].url_imagen);
+
+            }).fail(function (response) {
+
+                console.log(response);
+
+            });
+        },
+
+        imagenListadoPrecio: function () {
+
+            $.ajax({
+                url: urlAPI + 'listarListaPrecioxEstado',
+                type: 'POST',
+                dataType: 'json'
+            }).done(function (data) {
+
+                $('#adminListaPrecio').attr('src', urlImages + "ListaPrecio" + data[0].url_imagen);
+                $('#adminPDFListaPrecio').attr('href', urlImages + "ListaPrecio" + data[0].url_pdf);
+
+            }).fail(function (response) {
+
+                console.log(response);
+
+            });
+        }
+    }
+
+    jQuery(document).ready(function ($) {
+
+        window.onload = function() {
+            unidadNegocio.Video();
+            niff_lista_precio.imagenNiff();
+            niff_lista_precio.imagenListadoPrecio();
+        }
+
+        partners.Listar();
+        unidadNegocio.SlideUnidad();
+        noticias.listarActivas();
+
+
+    });
+
+</script>
+
+
 
 <script>
     jQuery(document).ready(function ($) {
