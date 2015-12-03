@@ -2,13 +2,13 @@
 var url = document.location.href;
 url = url.toLowerCase();
 
-var dominioGS = "localhost";
+var dominioGS = "localhost/IFMWeb";
 
 if (url.indexOf(".com.co") >= 0)
 {
-	dominioGS = "localhost";
+	dominioGS = "localhost/IFMWeb";
 }else {
-	dominioGS = "localhost";
+	dominioGS = "localhost/IFMWeb";
 }
 
 //VerificaciÃ³n de url para la consulta de datos
@@ -19,14 +19,25 @@ var urlAPI = "";
 
 if (url.indexOf("www") >= 0)
 {
-	urlImages = "http://www." + dominioGS + "/GSYSTEM/Admin/dist/upload/";
-	urlAPI = "http://www." + dominioGS + "/GSYSTEM/api/";
+	urlImages = "" + dominioGS + "/GSYSTEM/Admin/dist/upload/";
+	urlAPI = "" + dominioGS + "/GSYSTEM/api/";
 
 
 }else{
 	urlImages = "http://" + dominioGS + "/GSYSTEM/Admin/dist/upload/";
 	urlAPI = "http://" + dominioGS + "/GSYSTEM/api/";
 }
+
+//if (url.indexOf("www") >= 0)
+//{
+//	urlImages = "http://www." + dominioGS + "/GSYSTEM/Admin/dist/upload/";
+//	urlAPI = "http://www." + dominioGS + "/GSYSTEM/api/";
+//
+//
+//}else{
+//	urlImages = "http://" + dominioGS + "/GSYSTEM/Admin/dist/upload/";
+//	urlAPI = "http://" + dominioGS + "/GSYSTEM/api/";
+//}
 
 
 

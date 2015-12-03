@@ -35,10 +35,6 @@ var expertos = {
           required: true,
           minlength: 5
         },
-        txtSkype: {
-          required: true,
-          minlength: 2
-        }
       },
       messages: {
         txtNombre: {
@@ -50,13 +46,8 @@ var expertos = {
           minlength: "Se requieren mínimo 2 caracteres"
         },
         txtEmail: {
-          required: "El skype es requerido.",
-          minlength: "Se requieren mínimo 2 caracteres",
-          email: "Debe ser un email correcto"
-        },
-        txtTelefono: {
-          required: "El telefono es requerido.",
-          minlength: "Se requieren mínimo 7 caracteres"
+          required: "El Cargo es requerido.",
+          minlength: "Se requieren mínimo 2 caracteres"
         },
         file: "La imagen del experto es requerida"
       }
@@ -76,7 +67,7 @@ var expertos = {
   },
   Eliminar:function(id){
     $.ajax({
-      url: url+'/GSYSTEM/api/deleteExpertos',
+      url: url+'/ifmWEb/GSYSTEM/api/deleteExpertos',
       type: 'POST',
       data: {"id":id},
       dataType:'json'
@@ -97,7 +88,7 @@ var expertos = {
   },
   Guardar:function(){
     $.ajax({
-      url: url+'/GSYSTEM/api/createExpertos',
+      url: url+'/IFMWeb/GSYSTEM/api/createExpertos',
       type: 'POST',
       data: new FormData( document.getElementById("frmExpertos") ),
       processData: false,
@@ -117,7 +108,7 @@ var expertos = {
   },
   Modificar:function(){
     $.ajax({
-      url: url+'/GSYSTEM/api/updateExpertos',
+      url: url+'/IFMWeb/GSYSTEM/api/updateExpertos',
       type: 'POST',
       data: new FormData( document.getElementById("frmExpertos") ),
       processData: false,
@@ -136,7 +127,7 @@ var expertos = {
   },
   ModificarEstado:function(id, estado){
     $.ajax({
-      url: url+'/GSYSTEM/api/updateEstadoExpertos',
+      url: url+'/IFMWeb/GSYSTEM/api/updateEstadoExpertos',
       type: 'POST',
       data: {'id':id, 'estado':estado},
       dataType:'json'
@@ -208,9 +199,9 @@ expertos.Limpiar();
  
 });
 },
-Edit:function(nombre, skype, email){
+Edit:function(nombre, skype, email,url,id){
  
-  //$("#txtIdExpertos").val(id);
+ $("#txtIdExpertos").val(id);
   $("#txtNombre").val(nombre);
   $("#txtSkype").val(skype);
   $("#txtEmail").val(email);

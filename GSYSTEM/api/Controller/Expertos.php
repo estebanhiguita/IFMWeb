@@ -14,87 +14,110 @@ class Expertos extends Controller
 
         $json = str_replace('"\u0001"', '"1"', $json);
         $json = str_replace('"\u0000"', '"0"', $json);
-    //    var_dump($json);
+        //    var_dump($json);
         return $json;
     }  
 
- 
-
-    public function createExpertos($nombre, $url, $profesion, $cargo, $file, $estado){
-
-    	$mensaje = "";
-
-    	$this->mExpertos->__SET('_nombre', $nombre);
-        $this->mExpertos->__SET('_url', $url);
-    	$this->mExpertos->__SET('_profesion', $profesion);
-    	$this->mExpertos->__SET('_cargo', $cargo);
 
 
-    	$target_dir = "../Admin/dist/upload/Expertos/";
-		$target_file = $target_dir . $file["name"];
+    public function createExpertos($nombre, $profesion, $cargo, $file){
 
-		$uploadOk = 1;
-		$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+        $mensaje = "";
+        $estado = 1;
 
-		if ($uploadOk != 0) 
-		{
-		    if (move_uploaded_file($file["tmp_name"], $target_file)) {
-		    	$this->mExpertos->__SET('_url', $file["name"]);
-		    } 
-		}
+        $this->mExpertos->__SET('_nombre', $nombre);
+        $this->mExpertos->__SET('_url', $file);
+        $this->mExpertos->__SET('_profesion', $profesion);
+        $this->mExpertos->__SET('_cargo', $cargo);
+        $this->mExpertos->__SET('_estado', $estado);
+        echo $nombre;
+        echo $file["name"];
+        echo $profesion;
+        echo $cargo;
+        echo $estado;
+        $target_dir = "../Admin/dist/upload/Expertos/";
+        $target_file = $target_dir . $file["name"];
 
-    	try{
-    		if($this->mExpertos->createExpertos()){
-    			if($uploadOk==1){
-    				$mensaje = "Se registró con exito!";
-    			}else{
-    				$mensaje = "Se registro con exito, pero la imagen no se pudo almacenar en el servidor";
-    			}
-    		}else{
-    			$mensaje = "Ocurrio un error registrando";
-    		}
-    	}catch(Exception $e){
-    		$mensaje = "Ocurrio un error ".$e->getMessage();
-    	}
+        $uploadOk = 1;
+        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-    	echo json_encode(['msj'=>$mensaje]);
+        if ($uploadOk != 0) 
+        {
+            if (move_uploaded_file($file["tmp_name"], $target_file)) {
+                $this->mExpertos->__SET('_url', $file["name"]);
+            } 
+        }
+
+        try{
+            if($this->mExpertos->createExpertos()){
+                echo "si esta entrando createExpertos";
+                if($uploadOk==1){
+                    $mensaje = "Se registró con exito!";
+                }else{
+                    $mensaje = "Se registro con exito, pero la imagen no se pudo almacenar en el servidor";
+                }
+            }else{
+                echo "NO... esta entrando createExpertos";
+                $mensaje = "Ocurrio un error registrando";
+            }
+        }catch(Exception $e){
+            $mensaje = "Ocurrio un error ".$e->getMessage();
+        }
+
+        echo json_encode(['msj'=>$mensaje]);
     }
 
-   	public function updateExpertos($id, $nombre, $url, $profesion, $cargo, $file){
+    public function updateExpertos($id, $nombre, $profesion, $cargo, $file){
 
-    	$mensaje = "";
+        $mensaje = "";
 
-    	$this->mExpertos->__SET('_id_expertos', $id);
-    	$this->mExpertos->__SET('_nombre', $nombre);
-        $this->mExpertos->__SET('_url', $url);
-    	$this->mExpertos->__SET('_profesion', $profesion);
-    	$this->mExpertos->__SET('_cargo', $cargo);
+        $this->mExpertos->__SET('_id_expertos', $id);
+        $this->mExpertos->__SET('_nombre', $nombre);
+        $this->mExpertos->__SET('_url', $file);
+        $this->mExpertos->__SET('_profesion', $profesion);
+        $this->mExpertos->__SET('_cargo', $cargo);
 
-    	$bImage = 0;
-    	$uploadOk = 1;
+        $bImage = 0;
+        $uploadOk = 1;
 
 
-    	if($file["name"] != ''){
+        if($file["name"] != ''){
 
-	    	$target_dir = "../Admin/dist/upload/Expertos/";
-			$target_file = $target_dir . $file["name"];
+            $target_dir = "../Admin/dist/upload/Expertos/";
+            $target_file = $target_dir . $file["name"];
 
-			
-			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-			if ($uploadOk != 0) {
+            $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 
-			    if (move_uploaded_file($file["tmp_name"], $target_file)) {
-			    	$this->mExpertos->__SET('_url', $file["name"]);
-			    	$bImage = 1;
-			    } else {
-			
-			    }
-			}
+            if ($uploadOk != 0) {
 
-    	}
+                if (move_uploaded_file($file["tmp_name"], $target_file)) {
+                    $this->mExpertos->__SET('_url', $file["name"]);
+                    $bImage = 1;
+                } else {
 
-    	return json_encode(['msj'=>$mensaje]);
+                }
+            }
+
+        }
+        try{
+            if($this->mExpertos->updateExpertos(1, $bImage)){
+                if($uploadOk==1){
+                    $mensaje = "Se modifico con exito!";
+                }else{
+                    $mensaje = "Se modifico con exito, pero la imagen no se pudo almacenar en el servidor";
+                }
+            }else{
+                $mensaje = "Ocurrio un error modificando
+
+
+    			";
+            }
+        }catch(Exception $e){
+            $mensaje = "Ocurrio un error ".$e->getMessage();
+        }
+
+        return json_encode(['msj'=>$mensaje]);
     }
 
     public function deleteExpertos($id){
@@ -102,8 +125,30 @@ class Expertos extends Controller
         $resultado = $this->mExpertos->deleteExpertos();
         return json_encode($resultado);
     }
-
     
+    public function updateEstadoExpertos($id, $estado){
+
+    	$mensaje = "";
+
+    	$this->mExpertos->__SET('_id_expertos', $id);
+    	$this->mExpertos->__SET('_estado', $estado);
+
+    	try{
+    		if($this->mExpertos->updateExpertos(0, 0)){
+    			
+    			$mensaje = "Se modifico con exito!";
+    			
+    		}else{
+    			$mensaje = "Ocurrio un error modificando";
+    		}
+    	}catch(Exception $e){
+    		$mensaje = "Ocurrio un error ".$e->getMessage();
+    	}
+
+    	return json_encode(['msj'=>$mensaje]);
+    }
+
+
 
 
 

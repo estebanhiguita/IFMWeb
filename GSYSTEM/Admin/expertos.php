@@ -48,7 +48,7 @@ require '_layout/header.php';
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Cargo</label>
-                                        <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Ejm: andresf@correo.com" required>
+                                        <input type="text" class="form-control" name="txtEmail" id="txtEmail" placeholder="Director comercial" required>
                                     </div>
                                 </div>
                             </div>

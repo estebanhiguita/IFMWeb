@@ -375,16 +375,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <script type="text/x-tmpl" id="tmpl-data-experto">
 
-        <li>
+        <li class="team-member">
+        
             <a>
-                <img class="profile img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
+                <img class="img-responsive img-circle" src="{%= urlImages %}Expertos/{%=o.url%}" />
             </a>
-            <h2>{%=o.nombre%} </h2>
-            <a href="skype:{%=o.skype%}?chat">
-                <img src="images/skype.png" alt="Colombia" class="skype">
-            </a>
-            <span> <a style="color:#fff" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to={%=o.email%}" target="blanck" >{%=o.email%}</a></span>
-            <span>Cel: {%=o.telefono%}</span>
+            <h4>{%=o.nombre%} </h4>
+            <p>
+              {%=o.profesion%}  
+            </p>
+            <p> {%=o.cargo%}</p>
         </li>
 
     </script>
@@ -396,9 +396,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Listar: function () {
 
                 $.ajax({
-                    url: urlAPI + 'listarExpertosxUnidad',
+                    url: urlAPI + 'listarExpertos',
                     type: 'POST',
-                    data: { 'idUnidad': unidad },
                     dataType: 'json'
                 }).done(function (response) {
 

@@ -20,19 +20,14 @@ $app->post('/deleteExpertos', function () {
     echo $ctr->deleteExpertos($_POST["id"]);
 });
 
-$app->post('/listarExpertosxUnidad', function () {
-    $ctr = Controller::loadController("Expertos");
-    echo $ctr->getAllExpertosxUnidad($_POST["idUnidad"]);
-});
-
 $app->post('/createExpertos', function () {
     $ctr = Controller::loadController("Expertos");
-    echo $ctr->createExpertos($_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_POST["txtTelefono"],$_FILES["file"],$_POST["ddlUnidad"]);
+    echo $ctr->createExpertos($_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_FILES["file"]);
 });
 
 $app->post('/updateExpertos', function () {
     $ctr = Controller::loadController("Expertos");
-    echo $ctr->updateExpertos($_POST["txtIdExpertos"], $_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_POST["txtTelefono"],$_FILES["file"],$_POST["ddlUnidad"]);
+    echo $ctr->updateExpertos($_POST["txtIdExpertos"], $_POST["txtNombre"],$_POST["txtSkype"],$_POST["txtEmail"],$_FILES["file"]);
 });
 
 $app->post('/updateEstadoExpertos', function () {
