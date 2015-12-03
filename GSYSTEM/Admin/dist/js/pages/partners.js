@@ -60,7 +60,7 @@ var partners = {
 	},
 		Eliminar:function(id){
     $.ajax({
-      url: url+'/GSYSTEM/api/deletePartner',
+      url: url+'/IFMWeb/GSYSTEM/api/deletePartner',
       type: 'POST',
       data: {"id":id},
       dataType:'json'
@@ -82,7 +82,7 @@ var partners = {
 	Guardar:function(){
 
 		$.ajax({
-			url: url+'/GSYSTEM/api/createPartners',
+			url: url+'/IFMWeb/GSYSTEM/api/createPartners',
 			type: 'POST',
 			data: new FormData( document.getElementById("frmPartners") ),
 			processData: false,
@@ -101,7 +101,7 @@ var partners = {
 	},
 	Modificar:function(){
 		$.ajax({
-			url: url+'/GSYSTEM/api/updatePartners',
+			url: url+'/IFMWeb/GSYSTEM/api/updatePartners',
 			type: 'POST',
 			data: new FormData( document.getElementById("frmPartners") ),
 			processData: false,
@@ -121,7 +121,7 @@ var partners = {
 	ModificarEstado:function(id, estado){
 
 		$.ajax({
-			url: url+'/GSYSTEM/api/updateEstadoPartners',
+			url: url+'/IFMWeb/GSYSTEM/api/updateEstadoPartners',
 			type: 'POST',
 			data: {'idPartner':id, 'estado':estado},
 			dataType:'json'
@@ -138,7 +138,7 @@ var partners = {
 	},
 	Listar:function(){
 
-		$.getJSON(url+'/GSYSTEM/api/listarPartners')
+		$.getJSON(url+'/IFMWeb/GSYSTEM/api/listarPartners')
 		.done(function(data) {
 
 			var tablePartners = $("#tblPartners").dataTable();
