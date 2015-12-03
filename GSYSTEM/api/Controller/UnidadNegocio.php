@@ -34,31 +34,32 @@ class UnidadNegocio extends Controller
         return json_encode($resultado);
     }
 
-    public function updateUnidades($id, $nombre, $url, $url2, $descripcion){
+    public function updateUnidades($id, $nombre, $url_logo, $url_imagen, $descripcion){
 
         $mensaje = "";
 
         $this->mUnidadNegocio->__SET('_id_unidad_negocio', $id);
         $this->mUnidadNegocio->__SET('_nombre', $nombre);
-        $this->mUnidadNegocio->__SET('_url_video', $urlVideo);
+        $this->mUnidadNegocio->__SET('_url_logo', $url_logo);
+        $this->mUnidadNegocio->__SET('_url_imagen', $url_imagen);
+        $this->mUnidadNegocio->__SET('_descripcion', $urlVideo);
 
         $bImage = 0;
         $uploadOk = 1;
-
-
-        if($url["name"] != ''){
-
-            $target_dir = "../Admin/dist/upload/Unidades/";
-            $target_file = $target_dir . $url["name"];
-
-            
-            $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-
-
-            if (move_uploaded_file($url["tmp_name"], $target_file)) {
-                $this->mUnidadNegocio->__SET('_url_logo', $url["name"]);
-                $bImage = 1;
-            }
+        
+        $target_dir = "../Admin/dist/upload/Partners/";
+        $target_file = $target_dir . $url_logo["name"];
+        
+        $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+        if (move_uploaded_file($url_logo["tmp_name"], $target_file)) {
+            $this->mPartners->__SET('_url', $url_logo["name"]);
+        }
+        
+        $target_file1 = $target_dir . $url_imagen["name"];
+        
+        $imageFileType = pathinfo($target_file1,PATHINFO_EXTENSION);
+        if (move_uploaded_file($url_imagen["tmp_name"], $target_file1)) {
+            $this->mPartners->__SET('_url', $url_imagen["name"]);
         }
 
         try{

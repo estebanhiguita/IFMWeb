@@ -57,8 +57,16 @@ class clsUnidadNegocio
 
         return $query->fetchAll();
     }
+    
+    public function getInfoUnidadNegocio($unidad)
+    {
+        $select= "SELECT  nombre, url_logo, url_imagen, descripcion FROM tbl_unidad_negocio where id_unidad_negocio = '".$unidad."';";
+        $result = mysqli_query($mysqli, $select);
+        $row = mysqli_fetch_array($result); 
+        $respuesta1 = $row["descripcion"];
+    }
 
-    public function updateUnidades($bImage)
+    public function updateUnidades($bImage1, $bImage2)
     {
 
         if($bImage == 0){
@@ -66,7 +74,7 @@ class clsUnidadNegocio
             $sql = "UPDATE tbl_unidad_negocio SET nombre = ?, descripcion = ? WHERE id_unidad_negocio = ?";
             $query = $this->db->prepare($sql);
             $query->bindValue(1, $this->__GET("_nombre"));
-            $query->bindValue(2, $this->__GET("_url_video"));
+            $query->bindValue(2, $this->__GET("_descripcion"));
             $query->bindValue(3, $this->__GET("_id_unidad_negocio"));
 
         }else{

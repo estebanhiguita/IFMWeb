@@ -1,6 +1,6 @@
 'use strict';
 
-var url = '';
+var url = '/IFMWeb';
 
 $(function () {
 
@@ -29,7 +29,7 @@ var unidades = {
 		var form = $( "#frmUnidades" );
 		form.validate({
 			rules: {
-				urlVideo: {
+				descripcion: {
 					required: true,
 					minlength: 2
 				}
@@ -37,7 +37,7 @@ var unidades = {
 			messages: {
 				idUnidad: "El código de la unidad de negocio es requerido.",
 				urlUnidad: "La imagen de la unidad de negocio es requerida.",
-				urlVideo: {
+				descripcion: {
 					required: "El vídeo para la unidad de negocio es requerido (YouTube).",
 					minlength: "Se requieren mínimo 2 caracteres."
 				}
