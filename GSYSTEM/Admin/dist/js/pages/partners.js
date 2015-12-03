@@ -1,6 +1,6 @@
 'use strict';
 
-var url = '';
+var url = '/IFMWeb';
 
 $(function () {
 
