@@ -7,12 +7,12 @@ require '_layout/header.php';
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      NIFF
+      Fondo Principal
       <small>Version 1.0</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Inicio</a></li>
-      <li class="active">NIFF</li>
+      <li class="active">Fondo</li>
     </ol>
   </section>
 

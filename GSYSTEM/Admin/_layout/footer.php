@@ -2,7 +2,7 @@
   <div class="pull-right hidden-xs">
     <b>Version</b> 1.0
   </div>
-  <strong>Copyright &copy; <?php echo date('Y') ?> <a href="http://gestionsystem.com">Gestion System</a>.</strong> Todos los derechos reservados.
+  <strong>Copyright &copy; <?php echo date('Y') ?> <a href="http://infocusmadrid.com">INFOCUS MADRID</a>.</strong> Todos los derechos reservados.
 </footer>
 
       <!-- Add the sidebar's background. This div must be placed
