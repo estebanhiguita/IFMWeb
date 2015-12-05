@@ -1,2 +1,0 @@
-# GSYSTEM
-Admin
